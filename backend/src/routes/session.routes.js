@@ -1,0 +1,1 @@
+const r=require('express').Router(),c=require('../controllers/session.controller');r.get('/active',c.active);r.get('/:id',c.get);r.post('/:id/pause',c.pause);r.post('/:id/resume',c.resume);r.post('/:id/finish',c.finish);module.exports=r;
