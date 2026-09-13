@@ -1,1 +1,0 @@
-require('dotenv').config();if(!process.env.JWT_SECRET){console.error('JWT_SECRET is required');process.exit(1)}const app=require('./app');const port=Number(process.env.PORT||3000);app.listen(port,'0.0.0.0',()=>console.log(`Checkpoint API listening on ${port}`));

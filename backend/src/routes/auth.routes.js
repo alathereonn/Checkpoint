@@ -1,1 +1,0 @@
-const r=require('express').Router(),c=require('../controllers/auth.controller'),auth=require('../middleware/auth.middleware');r.post('/register',c.register);r.get('/register/check-username',c.checkUsername);r.get('/register/check-email',c.checkEmail);r.post('/login',c.login);r.get('/me',auth,c.me);r.post('/logout',auth,c.logout);module.exports=r;
